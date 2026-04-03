@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management & Circular Economy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Analyzing waste... ♻️</p>
+    </div>
+    
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-recycle"></i> Smart Waste Classifier</h1>
+            <p>Upload waste image for YOLO detection (Bag/Bottle/Cup) & sustainability insights!</p>
+            {% if model_status %}
+            <div class="status">{{ model_status }}</div>
+            {% endif %}
+        </header>
+        
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="upload-btn">
+                <i class="fas fa-cloud-upload-alt"></i> Choose Waste Image
+            </label>
+            <div id="preview">
+                <img id="previewImg" alt="Image preview">
+            </div>
+        </div>
+        
+        <button id="predictBtn" disabled>
+            <i class="fas fa-magic"></i> Predict Waste Type
+        </button>
+        
+        <div id="result" class="result hidden fade-in-up">
+            <img id="annotatedImg" alt="Annotated detections with bounding boxes">
+            
+            <h2 id="totalDetections"></h2>
+            
+            <div id="tip"></div>
+            
+            <h3>Detections:</h3>
+            <ul id="detectionList" role="list"></ul>
+            
+            <div id="summary" aria-label="Waste summary statistics"></div>
+        </div>
+        
+        <footer>
+            <p><i class="fas fa-leaf"></i> Powered by YOLOv8 & Flask | Reduce, Reuse, Recycle! 🌍</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

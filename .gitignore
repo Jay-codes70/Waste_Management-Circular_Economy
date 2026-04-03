@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.dmypy.json
+dmypy.json
+pyright/
+reportLab/
+.pytest_cache/
+
+# Ultralytics/YOLO
+runs/
+models/
+static/uploads/
+yolov8n.pt
+*.pt
+*.h5
+
+# Data
+data/raw/
+data/processed/
+
+# VSCode
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+
