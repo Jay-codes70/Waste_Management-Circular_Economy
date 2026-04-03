@@ -85,14 +85,16 @@ Model auto-saves to `models/waste_yolo/weights/best.pt`
 
 ## 📱 Screenshots
 <!-- Add your screenshots here -->
-1. **Upload Page**: 
+1. **Upload Page**:
 
-2. **Detection Result**: 
+   <img width="1328" height="572" alt="Screenshot 2026-04-03 144044" src="https://github.com/user-attachments/assets/c5551403-c35e-4705-a498-252bc43e05b7" />
 
 
-## 🚀 Demo
-<!-- Embed your demo GIF/video here -->
-![Demo](demo.gif)
+3. **Detection Result**: 
+<img width="969" height="619" alt="Screenshot 2026-04-03 144139" src="https://github.com/user-attachments/assets/2b6507eb-a5a7-4379-8fbf-0e02c460696c" />
+<img width="1081" height="556" alt="Screenshot 2026-04-03 144258" src="https://github.com/user-attachments/assets/a548fd4f-36d9-4f45-9ee6-273164eeb3fa" />
+<img width="877" height="556" alt="Screenshot 2026-04-03 144209" src="https://github.com/user-attachments/assets/d72d22e5-5deb-46be-a973-40b71e6bc39d" />
+
 
 
 ## 📄 License
